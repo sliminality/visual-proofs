@@ -3,17 +3,28 @@ html {
 
 body {
   font-family: 'Wyld', serif;
-  font-size: 18px; }
+  font-size: 20px;
+  background-color: #e8e8e8;
+  color: #2d2006; }
+
+.main {
+  margin-top: 50px; }
 
 .proof {
   max-width: 800px;
   margin: 0 auto; }
   .proof__header {
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
   .proof__title {
     text-transform: uppercase;
-    font-size: 100%;
-    text-align: center; }
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 20px; }
+  .proof__subtitle {
+    font-style: italic;
+    font-size: 90%;
+    text-align: center;
+    display: block; }
   .proof__prop {
     margin: 0;
     font-style: italic;
@@ -21,39 +32,59 @@ body {
   .proof p {
     margin: 0.8em; }
   .proof hr {
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
-[data-math-point] {
-  background-color: #c6f2e1;
-  border-color: #73dfb5; }
-  [data-math-point]:hover {
-    background-color: #73dfb5; }
+.proof__figure {
+  margin: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%); }
+  .proof__figure-caption {
+    text-align: center; }
 
-[data-math-line] {
-  background-color: #fbf4b9;
-  border-color: #f5e559; }
-  [data-math-line]:hover {
-    background-color: #f5e559; }
-
-[data-math-angle] {
+[data-math-type="point"] {
   background-color: #dab9a5;
   border-color: #bc815d; }
-  [data-math-angle]:hover {
-    background-color: #bc815d; }
+  [data-math-type="point"]:hover {
+    background-color: #cb9d81; }
 
-[data-math-quad] {
+[data-math-type="line"] {
+  background-color: #eaf2fc;
+  border-color: #91bbef; }
+  [data-math-type="line"]:hover {
+    background-color: #bdd6f6; }
+
+[data-math-type="angle"] {
+  background-color: #b29762;
+  border-color: #756139; }
+  [data-math-type="angle"]:hover {
+    background-color: #977d4a; }
+
+[data-math-type="quad"] {
   background-color: #b2b9de;
   border-color: #6b78bf; }
-  [data-math-quad]:hover {
-    background-color: #6b78bf; }
+  [data-math-type="quad"]:hover {
+    background-color: #8e99cf; }
 
-[data-math-point],
-[data-math-line],
-[data-math-angle],
-[data-math-quad] {
+[data-math-type="point"],
+[data-math-type="line"],
+[data-math-type="angle"],
+[data-math-type="quad"] {
   padding: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 3px; }
+  border-radius: 4px; }
+
+[data-highlight-container] {
+  position: absolute;
+  z-index: 999; }
+
+.highlight--point {
+  background-color: #eaf2fc;
+  opacity: 0.6; }
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px; }

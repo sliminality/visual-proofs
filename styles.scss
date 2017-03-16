@@ -1,7 +1,7 @@
-$blond: rgb(251, 244, 185);
-$mint: rgb(198, 242, 225);
-$pink: rgb(218, 185, 165);
-$blue: rgb(178, 185, 222);
+$point: rgb(218, 185, 165);
+$line: rgb(234, 242, 252);
+$angle: rgb(178, 151, 98);
+$quad: rgb(178, 185, 222);
 
 html {
   font-size: 100%;
@@ -9,7 +9,13 @@ html {
 
 body {
   font-family: 'Wyld', serif;
-  font-size: 18px;
+  font-size: 20px;
+  background-color: rgb(232, 232, 232);
+  color: rgb(45, 32, 6);
+}
+
+.main {
+  margin-top: 50px;
 }
 
 .proof {
@@ -17,13 +23,21 @@ body {
   margin: 0 auto;
 
   &__header {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   &__title {
     text-transform: uppercase;
-    font-size: 100%;
+    font-size: 150%;
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-style: italic;
+    font-size: 90%;
+    text-align: center;
+    display: block;
   }
 
   &__prop {
@@ -37,54 +51,80 @@ body {
   }
 
   hr {
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
-[data-math-point] {
-  background-color: $mint;
-  border-color: darken($mint, 20%);
+.proof__figure {
+  margin: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+
+  &-caption {
+    text-align: center;
+  }
+}
+
+[data-math-type="point"] {
+  background-color: $point;
+  border-color: darken($point, 20%);
 
   &:hover {
-    background-color: darken($mint, 20%);
+    background-color: darken($point, 10%);
   }
 }
 
-[data-math-line] {
-  background-color: $blond;
-  border-color: darken($blond, 20%);
+[data-math-type="line"] {
+  background-color: $line;
+  border-color: darken($line, 20%);
 
   &:hover {
-    background-color: darken($blond, 20%);
+    background-color: darken($line, 10%);
   }
 }
 
-[data-math-angle] {
-  background-color: $pink;
-  border-color: darken($pink, 20%);
+[data-math-type="angle"] {
+  background-color: $angle;
+  border-color: darken($angle, 20%);
 
   &:hover {
-    background-color: darken($pink, 20%);
+    background-color: darken($angle, 10%);
   }
 }
 
-[data-math-quad] {
-  background-color: $blue;
-  border-color: darken($blue, 20%);
+[data-math-type="quad"] {
+  background-color: $quad;
+  border-color: darken($quad, 20%);
 
   &:hover {
-    background-color: darken($blue, 20%);
+    background-color: darken($quad, 10%);
   }
 }
 
-[data-math-point],
-[data-math-line],
-[data-math-angle],
-[data-math-quad] {
+[data-math-type="point"],
+[data-math-type="line"],
+[data-math-type="angle"],
+[data-math-type="quad"] {
   padding: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 3px;
+  border-radius: 4px;
+}
+
+[data-highlight-container] {
+  position: absolute;
+  z-index: 999;
+}
+
+.highlight--point {
+  background-color: $line;
+  opacity: 0.6;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px;
 }

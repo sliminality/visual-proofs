@@ -49,8 +49,8 @@ const lightblue = 'rgba(0, 200, 255, 0.75)';
 const darkblue = '#1C75BC';
 const colors = {
   point: 'rgb(251, 244, 185)',
-  line: 'cyan',
-  angle: 'rgb(218, 185, 165)',
+  line: 'rgb(22, 89, 223)',
+  angle: 'rgb(178, 151, 98)',
   quad: 'rgb(178, 185, 222)',
 };
 
@@ -83,7 +83,7 @@ const line = id => {
 
     // Create a highlight for the line...
     const lineHighlight = l.clone();
-    lineHighlight.linewidth = 10;
+    lineHighlight.linewidth = 3;
     lineHighlight.opacity = 0;
     lineHighlight.stroke = colors['line'];
     _lineHighlights[id] = lineHighlight;
@@ -103,7 +103,7 @@ const angleHighlight = id => {
     const endpoints = k.split('');
     const [ p1, p2 ] = endpoints.map(point);
     const hl = two.makeLine(...p1, ...p2);
-    hl.linewidth = 10;
+    hl.linewidth = 3;
     hl.opacity = 0;
     hl.stroke = colors['angle'];
     // Peak jank. Angle highlihgts should obviously be indexed
@@ -136,7 +136,8 @@ const label = id => {
     const labelHighlight = rect({
       x: x + labelOffset, y: y - 5,
       h: 15, w: 15,
-      type: 'point',
+      stroke: 'rgba(0,0,0,0)',
+      fill: 'rgba(0,0,0,0)',
     });
     _labelHighlights[id] = labelHighlight;
     const t = two.makeText(id, x, y, options);
@@ -189,7 +190,6 @@ const group = two.makeGroup(groupies);
 
 group.translation.set(50, 25);
 group.scale = 2;
-group.linewidth = 1;
 
 two.update();
 
@@ -228,6 +228,9 @@ const toggleHighlight = ({ type, key }) => {
         : alphabetize(key);
       store[shortKey].opacity = 0;
       activeHighlights.delete(shortKey);
+    } else if (type === 'point') {
+      store[key].stroke = 'rgba(0,0,0,0)';
+      activeHighlights.delete(key);
     } else {
       store[key].opacity = 0;
       activeHighlights.delete(key);
@@ -246,7 +249,9 @@ const toggleHighlight = ({ type, key }) => {
         : alphabetize(key);
       store[shortKey].opacity = 0.9;
       activeHighlights.set(shortKey, type);
-
+    } else if (type === 'point') {
+      store[key].stroke = 'red';
+      activeHighlights.set(key, type);
     } else {
       const opacity = type === 'POINT' ? 0.6 : 1.0;
       store[key].opacity = opacity;
