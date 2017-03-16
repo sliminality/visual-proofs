@@ -2,7 +2,58 @@ html {
   font-size: 100%; }
 
 body {
-  font-family: 'Wyld', serif; }
+  font-family: 'Wyld', serif;
+  font-size: 18px; }
 
 .proof {
-  max-width: 800px; }
+  max-width: 800px;
+  margin: 0 auto; }
+  .proof__header {
+    margin-bottom: 30px; }
+  .proof__title {
+    text-transform: uppercase;
+    font-size: 100%;
+    text-align: center; }
+  .proof__prop {
+    margin: 0;
+    font-style: italic;
+    text-indent: 1em; }
+  .proof p {
+    margin: 0.8em; }
+  .proof hr {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+[data-math-point] {
+  background-color: #c6f2e1;
+  border-color: #73dfb5; }
+  [data-math-point]:hover {
+    background-color: #73dfb5; }
+
+[data-math-line] {
+  background-color: #fbf4b9;
+  border-color: #f5e559; }
+  [data-math-line]:hover {
+    background-color: #f5e559; }
+
+[data-math-angle] {
+  background-color: #dab9a5;
+  border-color: #bc815d; }
+  [data-math-angle]:hover {
+    background-color: #bc815d; }
+
+[data-math-quad] {
+  background-color: #b2b9de;
+  border-color: #6b78bf; }
+  [data-math-quad]:hover {
+    background-color: #6b78bf; }
+
+[data-math-point],
+[data-math-line],
+[data-math-angle],
+[data-math-quad] {
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px; }

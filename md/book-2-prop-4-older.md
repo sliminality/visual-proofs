@@ -2,93 +2,93 @@
 
 > If a straight line be divided into any two parts, the square of the whole line is equal to the squares of the two parts, together with twice the rectangle contained by the parts.
 
-Let the straight line AB be divided into any two parts in C;
+Let the straight line <span data-math-line data-math-value="AB">AB</span> be divided into any two parts in <span data-math-type data-math-value="C">C</span>;
 
-the square of AB is equal to
+the square of <span data-math-line data-math-value="AB">AB</span> is equal to
 
-the squares of AC, CB,
+the squares of <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>,
 
-and to twice the rectangle contained by AC, CB.
-
----
-
-Upon AB describe the square ADEB,
-
-and join BD,
-
-and through C draw CGF parallel to AD or BE,
-
-and through G draw HK parallel to AB or DE.
+and to twice the rectangle contained by <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>.
 
 ---
 
-And because CF is parallel to AD, and BD falls upon them,
+Upon <span data-math-line data-math-value="AB">AB</span> describe the square <span data-math-quad data-math-value="ADEB">ADEB</span>,
 
-the exterior angle BGC is equal to
+and join <span data-math-line data-math-value="BD">BD</span>,
 
-the interior and opposite angle ADB;
+and through <span data-math-type data-math-value="C">C</span> draw <span data-math-angle data-math-value="CGF">CGF</span> parallel to <span data-math-line data-math-value="AD">AD</span> or <span data-math-line data-math-value="BE">BE</span>,
 
-but ADB is equal to the angle ABD;
+and through <span data-math-type data-math-value="G">G</span> draw <span data-math-line data-math-value="HK">HK</span> parallel to <span data-math-line data-math-value="AB">AB</span> or <span data-math-line data-math-value="DE">DE</span>.
 
-because BA is equal to AD,
+---
+
+And because <span data-math-line data-math-value="CF">CF</span> is parallel to <span data-math-line data-math-value="AD">AD</span>, and <span data-math-line data-math-value="BD">BD</span> falls upon them,
+
+the exterior angle <span data-math-angle data-math-value="BGC">BGC</span> is equal to
+
+the interior and opposite angle <span data-math-angle data-math-value="ADB">ADB</span>;
+
+but <span data-math-angle data-math-value="ADB">ADB</span> is equal to the angle <span data-math-angle data-math-value="ABD">ABD</span>;
+
+because <span data-math-line data-math-value="BA">BA</span> is equal to <span data-math-line data-math-value="AD">AD</span>,
 
 being sides of a square;
 
-wherefore the angle CGB is equal to the angle GBC;
+wherefore the angle <span data-math-angle data-math-value="CGB">CGB</span> is equal to the angle <span data-math-angle data-math-value="GBC">GBC</span>;
 
-and therefore the side BC is equal to the side CG;
+and therefore the side <span data-math-line data-math-value="BC">BC</span> is equal to the side <span data-math-line data-math-value="CG">CG</span>;
 
-But CB is equal also to GK,
+But <span data-math-line data-math-value="CB">CB</span> is equal also to <span data-math-line data-math-value="GK">GK</span>,
 
-and CG to BK;
+and <span data-math-line data-math-value="CG">CG</span> to <span data-math-line data-math-value="BK">BK</span>;
 
-wherefore the figure CGKB is equilateral :
+wherefore the figure <span data-math-quad data-math-value="CGKB">CGKB</span> is equilateral :
 
 It is likewise rectangular;
 
-for CG is parallel to BK, and CB meets them
+for <span data-math-line data-math-value="CG">CG</span> is parallel to <span data-math-line data-math-value="BK">BK</span>, and <span data-math-line data-math-value="CB">CB</span> meets them
 
-the angles KBC, GCB are therefore equal to two right angles,
+the angles <span data-math-angle data-math-value="KBC">KBC</span>, <span data-math-angle data-math-value="GCB">GCB</span> are therefore equal to two right angles,
 
-and KBC is a right angle;
+and <span data-math-angle data-math-value="KBC">KBC</span> is a right angle;
 
-wherefore GCB is a right angle;
+wherefore <span data-math-angle data-math-value="GCB">GCB</span> is a right angle;
 
-and therefore also the angles CGK, GKB opposite to these are right angles,
+and therefore also the angles <span data-math-angle data-math-value="CGK">CGK</span>, <span data-math-angle data-math-value="GKB">GKB</span> opposite to these are right angles,
 
-and CGKB is rectangular;
+and <span data-math-quad data-math-value="CGKB">CGKB</span> is rectangular;
 
 but it is also equilateral, as was demonstrated;
 
-wherefore it is a square, and it is upon the side CB:
+wherefore it is a square, and it is upon the side <span data-math-line data-math-value="CB">CB</span>:
 
-For the same reason HF also is a square,
+For the same reason <span data-math-line data-math-value="HF">HF</span> also is a square,
 
-and it is upon the side HG, which is equal to AC:
+and it is upon the side <span data-math-line data-math-value="HG">HG</span>, which is equal to <span data-math-line data-math-value="AC">AC</span>:
 
-Therefore HF, CK are the squares of AC, CB;
+Therefore <span data-math-line data-math-value="HF">HF</span>, <span data-math-line data-math-value="CK">CK</span> are the squares of <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>;
 
-and because the complement AG is equal to the complement GE,
+and because the complement <span data-math-line data-math-value="AG">AG</span> is equal to the complement <span data-math-line data-math-value="GE">GE</span>,
 
-and that AG is the rectangle contained by AC, CB,
+and that <span data-math-line data-math-value="AG">AG</span> is the rectangle contained by <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>,
 
-for GC is equal to CB;
+for <span data-math-line data-math-value="GC">GC</span> is equal to <span data-math-line data-math-value="CB">CB</span>;
 
-therefore GE is also equal to the rectangle AC, CB;
+therefore <span data-math-line data-math-value="GE">GE</span> is also equal to the rectangle <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>;
 
-wherefore AG, GE are equal to twice the rectangle AC, CB:
+wherefore <span data-math-line data-math-value="AG">AG</span>, <span data-math-line data-math-value="GE">GE</span> are equal to twice the rectangle <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>:
 
-And HF, CK are the squares of AC, CB;
+And <span data-math-line data-math-value="HF">HF</span>, <span data-math-line data-math-value="CK">CK</span> are the squares of <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>;
 
-wherefore the four figures HF, CK, AG, GE are equal to the squares of AC, CB, and to twice the rectangle AC, CB:
+wherefore the four figures <span data-math-line data-math-value="HF">HF</span>, <span data-math-line data-math-value="CK">CK</span>, <span data-math-line data-math-value="AG">AG</span>, <span data-math-line data-math-value="GE">GE</span> are equal to the squares of <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>, and to twice the rectangle <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>:
 
-But HF, CK, AG, GE, make up the whole figure ADEB,
+But <span data-math-line data-math-value="HF">HF</span>, <span data-math-line data-math-value="CK">CK</span>, <span data-math-line data-math-value="AG">AG</span>, <span data-math-line data-math-value="GE">GE</span>, make up the whole figure <span data-math-quad data-math-value="ADEB">ADEB</span>,
 
-which is the square of AB:
+which is the square of <span data-math-line data-math-value="AB">AB</span>:
 
-Therefore the square of AB is equal to
+Therefore the square of <span data-math-line data-math-value="AB">AB</span> is equal to
 
-the squares of AC, CB and twice the rectangle AC, CB.
+the squares of <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span> and twice the rectangle <span data-math-line data-math-value="AC">AC</span>, <span data-math-line data-math-value="CB">CB</span>.
 
-Wherefore if a straight line, &c. Q.E.D. 
+Wherefore if a straight line, &c. QED.
 

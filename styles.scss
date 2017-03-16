@@ -1,11 +1,90 @@
+$blond: rgb(251, 244, 185);
+$mint: rgb(198, 242, 225);
+$pink: rgb(218, 185, 165);
+$blue: rgb(178, 185, 222);
+
 html {
   font-size: 100%;
 }
 
 body {
   font-family: 'Wyld', serif;
+  font-size: 18px;
 }
 
 .proof {
   max-width: 800px;
+  margin: 0 auto;
+
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 100%;
+    text-align: center;
+  }
+
+  &__prop {
+    margin: 0;
+    font-style: italic;
+    text-indent: 1em;
+  }
+
+  p {
+    margin: 0.8em;
+  }
+
+  hr {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+[data-math-point] {
+  background-color: $mint;
+  border-color: darken($mint, 20%);
+
+  &:hover {
+    background-color: darken($mint, 20%);
+  }
+}
+
+[data-math-line] {
+  background-color: $blond;
+  border-color: darken($blond, 20%);
+
+  &:hover {
+    background-color: darken($blond, 20%);
+  }
+}
+
+[data-math-angle] {
+  background-color: $pink;
+  border-color: darken($pink, 20%);
+
+  &:hover {
+    background-color: darken($pink, 20%);
+  }
+}
+
+[data-math-quad] {
+  background-color: $blue;
+  border-color: darken($blue, 20%);
+
+  &:hover {
+    background-color: darken($blue, 20%);
+  }
+}
+
+[data-math-point],
+[data-math-line],
+[data-math-angle],
+[data-math-quad] {
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
 }
