@@ -1,0 +1,72 @@
+:root {
+  --branch-width: 150px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Wyld', 'Hoefler Text', 'Baskerville', 'Palatino', 'Times New Roman', serif;
+  overflow-x: scroll;
+}
+
+.tree__leaf {
+  margin-bottom: 20px;
+}
+
+.tree__leaf:last-child {
+  margin-bottom: 0;
+}
+
+.tree__fork {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tree__fork > .tree__node-text {
+  width: var(--branch-width);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.tree__leaf > .tree__node-text {
+  /*display: flex;*/
+}
+
+.tree__leaf .tree__node-title {
+  /*min-width: 10em;*/
+  margin-right: 0.25em;
+}
+
+.tree__node-title {
+  font-size: 20px;
+}
+
+.tree__node-subtitle {
+  font-style: italic;
+  letter-spacing: -0.4px;
+}
+
+.tree__left-brace {
+  font-size: 40px;
+  line-height: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.tree__node-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collapsed {
+  height: 0;
+  transition: height 0.2s;
+  overflow: hidden;
+}
+
+.expanded {
+  height: 100%;
+  transition: height 0.2s;
+}
