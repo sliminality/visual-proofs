@@ -303,6 +303,11 @@ for (const el of mathData) {
   el.addEventListener('mouseout', onMathHover);
 }
 
+const p = document.querySelectorAll('p');
+[...Array(15)]
+  .map(() => Math.floor(Math.random() * p.length))
+  .forEach(i => p[i].style.fontSize = '90%');
+
 
 
 // const r = rect({

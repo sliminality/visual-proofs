@@ -12,6 +12,8 @@ date: March 2017
 
 # Introduction
 
+*Quick Links:* [Artifact 1](http://sarahlim.com/visual-proofs/proof) | [Artifact 2](http://sarahlim.com/visual-proofs/tree) | [Writeup (PDF)](http://users.eecs.northwestern.edu/~scl025/files/writeup.md.pdf)
+
 For my final project, I produced two digital artifacts based on Henry Billingsley's translation of Euclid's renowned *Elements* textbook. The first artifact is an interactive digital proof of Book II, Proposition IV, which describes a core algebraic identity through concrete geometric figures. The second artifact is my attempt at reproducing the large disciplinary hierarchy from John Dee's Mathematical Preface to Euclid.
 
 I created both artifacts from scratch, using a combination of HTML, Cascading Style Sheets (CSS), and JavaScript. Formally and aesthetically, programming languages are languages too, and I deeply enjoyed the experience of translating my ideas and thoughts from the course into code --- but more on that later.
@@ -19,6 +21,8 @@ I created both artifacts from scratch, using a combination of HTML, Cascading St
 I chose these artifacts because they provide avenues for cross-disciplinary discussions of mapping, structure, and knowledge representation, topics of great interest to me. This document describes my motivations and thought process throughout the course of this project. Because many of these ideas are very nascent, they do not always follow the format of a polished paper. Additionally, while I did explore many of the typographical directions discussed in my prospectus, this analysis will focus on theoretical topics that I felt were missing from my earlier assignments --- largely because I was still in the process of formulating my thoughts.
 
 # Mapping and Representation
+
+[Artifact 1: Visual Proof](http://sarahlim.com/visual-proofs/proof)
 
 In mathematics, a *map* $f : X \to Y$ establishes a relation from an origin set called $X$ to a destination set called $Y$. The statement $f(x) = y$ thus says that under the mapping $f$, an individual object $x$ transforms into $y$ once it enters the destination. Mappings may have additional characteristics, but they can be fundamentally understood as transformations of entities, or bridges of commensurability between otherwise disparate realms. Much like Wittgenstein's notion of context-dependence, information under transformation may appear completely different depending on its representational coordinate scheme.
 
@@ -45,7 +49,7 @@ My digitization aims to facilitate this mapping --- to mitigate the conditional 
 
 I want to briefly discuss a few relevant aspects of the technical approach. I have personally found significant joy in the interplay between technology and theory and consider the topic woefully underresearched; I'm also very pleased with what I was able to accomplish from a technical standpoint.
 
-Although the artifact here only provides one example, it is an early proof of concept (no pun intended) for a generalizable tool capable of *generating interactive two-dimensional visualizations from the text of geometric proofs* with certain characteristics. [^1] I chose this direction after spending days pondering Drucker's articulated ideal of a mapping between human thought, abstract mathesis, and graphical representation. Based on prior research in the aforementioned areas, I immediately began thinking of ways to automate the mapping between the abstract notation in the text, and the underlying graphical forms. This topic was particularly compelling for several reasons: it aligned with my primary research interests in programming languages, information visualization, and representation; it piqued my side interests in the philosophical implications of my chosen lines of work; and it was a tool that could directly help me, as someone with dyscalculia, in my mathematical studies.
+Although the artifact here only provides one example, it is an early proof of concept (no pun intended) for a generalizable tool capable of *generating interactive two-dimensional visualizations from geometric proofs* with certain characteristics,[^1] given a list of the relative positions of all points in the construction. I chose this direction after spending days pondering Drucker's articulated ideal of a mapping between human thought, abstract mathesis, and graphical representation. Based on prior research in the aforementioned areas, I immediately began thinking of ways to automate the mapping between the abstract notation in the text, and the underlying graphical forms. This topic was particularly compelling for several reasons: it aligned with my primary research interests in programming languages, information visualization, and representation; it piqued my side interests in the philosophical implications of my chosen lines of work; and it was a tool that could directly help me, as someone with dyscalculia, in my mathematical studies.
 
 In its current rough form, the tool itself is a mapping from the following inputs:
 
@@ -57,12 +61,16 @@ In its current rough form, the tool itself is a mapping from the following input
     rectangle AC by CB.
     ...
     ```
-2. A list of all the points used in the figure. For this particular example, the list was:
+2. A list of all the points used in the figure, along with their relative positions as $(x, y)$ coordinate pairs. For this particular example, the list was:
     ```
-    [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J' ]
+    {
+      A: [0, 0],    C: [75, 0],   B: [100, 0],
+      H: [0, 25],   G: [75, 25],  K: [100, 25],
+      D: [0, 100],  F: [75, 100], E: [100, 100],
+    },
     ```
 
-The output of the mapping consists of an HTML document, including the figure automatically generated by parsing the contents of the text and automatically identifying line segments; symbolic entities in the document have been processed and made interactive mouseover targets, connected to the corresponding piece of the figure.
+The output of the mapping consists of an HTML document, including the figure automatically generated by parsing the contents of the text and automatically identifying line segments; symbolic entities in the document have been processed and made interactive mouseover targets, connected to the corresponding piece of the figure. In a nod to the idiosyncracies of the original text, a selection of paragraphs are randomly size-adjusted to mimic the varying typeface sizes sprinkled throughout the book.
 
 Although Drucker warns against the zero-sum juxtaposition of graphesis and mathesis, she never seems to provide a clear example of how these seemingly incompatible modes might in fact work together. I particularly enjoyed building this tool because it exemplifies precisely how we might leverage terse machine-readable representation to yield graphical clarity when the original domain is not so clear --- were Euclid's original ideas geometric intuitions, abstract formal derivations, or a combination of the two? I don't know, and this ambiguity is partially why I chose to work on a mathematical text. The body of the text already consists of "ordinary human language" interspersed with fragments of mathesis. My first artifact demonstrates how graphesis, too, can be brought into the mix, a genuinely multimodal reading experience that imperfectly translates the tangible exploration Billingsley intended for his edition of Euclid.
 
@@ -76,6 +84,8 @@ $$(y + z)^2 = y^2 + z^2 + 2yz$$
 which would seem to place us solidly in the realm of mathesis. Which form is the canonical one? To which domain does the underlying idea belong? These are not easy questions, but to me, they illustrate the necessity of fluid mappings between embodied and abstract form.
 
 # Form and Content
+
+[Artifact 2: Tree](http://sarahlim.com/visual-proofs/tree)
 
 My [second digital artifact](http://sarahlim.com/visual-proofs/tree) represents my attempt to reconstruct the hierarchy of the scientific disciplines from John Dee's Mathematical Preface to the Billingsley edition of Euclid. Just as the diagram is sprawling and difficult to take in all at once, my digitization attempts to emulate the experience of unfolding something much too large and information-rich for a single take.
 
