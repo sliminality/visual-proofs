@@ -1,5 +1,8 @@
 html {
-  font-size: 200%; }
+  font-size: 100%; }
 
 body {
   font-family: 'Wyld', serif; }
+
+.proof {
+  max-width: 800px; }
