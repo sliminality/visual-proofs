@@ -1,90 +1,99 @@
 html {
-  font-size: 100%; }
+font-size: 100%; }
 
 body {
   font-family: 'Wyld', serif;
   font-size: 20px;
   background-color: #e8e8e8;
-  color: #2d2006; }
+color: #2d2006; }
 
 .main {
-  margin-top: 50px; }
+margin-top: 50px; }
 
 .proof {
   max-width: 800px;
-  margin: 0 auto; }
-  .proof__header {
-    margin-bottom: 50px; }
-  .proof__title {
-    text-transform: uppercase;
-    font-size: 150%;
-    text-align: center;
-    margin-bottom: 20px; }
-  .proof__subtitle {
-    font-style: italic;
-    font-size: 90%;
-    text-align: center;
-    display: block; }
-  .proof__prop {
-    margin: 0;
-    font-style: italic;
-    text-indent: 1em; }
-  .proof p {
-    margin: 0.8em; }
-  .proof hr {
-    width: 40%;
-    margin-top: 30px;
-    margin-bottom: 30px; }
+margin: 0 auto; }
+.proof__header {
+margin-bottom: 50px; }
+.proof__title {
+  text-transform: uppercase;
+  font-size: 150%;
+  text-align: center;
+margin-bottom: 20px; }
+.proof__subtitle {
+  font-style: italic;
+  font-size: 90%;
+  text-align: center;
+display: block; }
+.proof__prop {
+  margin: 0;
+  font-style: italic;
+text-indent: 1em; }
+.proof p {
+margin: 0.8em; }
+.proof hr {
+  width: 40%;
+  margin-top: 30px;
+margin-bottom: 30px; }
 
 .proof__figure {
   margin: 10px;
   position: fixed;
   right: 0;
   bottom: 50%;
-  transform: translateY(50%); }
-  .proof__figure-caption {
-    text-align: center; }
+transform: translateY(50%); }
+.proof__figure-caption {
+text-align: center; }
 
 [data-math-type="point"] {
   background-color: #dab9a5;
-  border-color: #bc815d; }
-  [data-math-type="point"]:hover {
-    background-color: #cb9d81; }
+border-color: #bc815d; }
+[data-math-type="point"]:hover {
+background-color: #cb9d81; }
 
 [data-math-type="line"] {
   background-color: #eaf2fc;
-  border-color: #91bbef; }
-  [data-math-type="line"]:hover {
-    background-color: #bdd6f6; }
+border-color: #91bbef; }
+[data-math-type="line"]:hover {
+background-color: #bdd6f6; }
 
 [data-math-type="angle"] {
   background-color: #b29762;
-  border-color: #756139; }
-  [data-math-type="angle"]:hover {
-    background-color: #977d4a; }
+border-color: #756139; }
+[data-math-type="angle"]:hover {
+background-color: #977d4a; }
 
 [data-math-type="quad"] {
   background-color: #b2b9de;
-  border-color: #6b78bf; }
-  [data-math-type="quad"]:hover {
-    background-color: #8e99cf; }
+border-color: #6b78bf; }
+[data-math-type="quad"]:hover {
+background-color: #8e99cf; }
 
 [data-math-type="point"],
 [data-math-type="line"],
 [data-math-type="angle"],
 [data-math-type="quad"] {
   padding: 2px;
-  border-radius: 4px; }
+border-radius: 4px; }
 
 [data-highlight-container] {
   position: absolute;
-  z-index: 999; }
+z-index: 999; }
 
 .highlight--point {
   background-color: #eaf2fc;
-  opacity: 0.6; }
+opacity: 0.6; }
 
 .footer {
   text-align: center;
   margin-top: 40px;
-  padding: 30px; }
+padding: 30px; }
+
+footer.footer,
+header.proof__header,
+main.proof__body > * {
+  margin-right: 320px;
+}
+body main.proof__body > figure.proof__figure {
+  margin-right: 10px;
+}
