@@ -4,127 +4,136 @@ $angle: rgb(178, 151, 98);
 $quad: rgb(178, 185, 222);
 
 html {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 body {
-  font-family: 'Wyld', serif;
-  font-size: 20px;
-  background-color: rgb(232, 232, 232);
-  color: rgb(45, 32, 6);
+    font-family: 'Wyld', serif;
+    font-size: 20px;
+    background-color: rgb(232, 232, 232);
+    color: rgb(45, 32, 6);
 }
 
 .main {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .proof {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 
-  &__header {
-    margin-bottom: 50px;
-  }
+    &__header {
+        margin-bottom: 50px;
+    }
 
-  &__title {
-    text-transform: uppercase;
-    font-size: 150%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    &__title {
+        text-transform: uppercase;
+        font-size: 150%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-  &__subtitle {
-    font-style: italic;
-    font-size: 90%;
-    text-align: center;
-    display: block;
-  }
+    &__subtitle {
+        font-style: italic;
+        font-size: 90%;
+        text-align: center;
+        display: block;
+    }
 
-  &__prop {
-    margin: 0;
-    font-style: italic;
-    text-indent: 1em;
-  }
+    &__prop {
+        margin: 0;
+        font-style: italic;
+        text-indent: 1em;
+    }
 
-  p {
-    margin: 0.8em;
-  }
+    p {
+        margin: 0.8em;
+    }
 
-  hr {
-    width: 40%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+    hr {
+        width: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .proof__figure {
-  margin: 10px;
-  position: fixed;
-  right: 0;
-  bottom: 50%;
-  transform: translateY(50%);
+    margin: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
 
-  &-caption {
-    text-align: center;
-  }
+    &-caption {
+        text-align: center;
+    }
 }
 
 [data-math-type="point"] {
-  background-color: $point;
-  border-color: darken($point, 20%);
+    background-color: $point;
+    border-color: darken($point, 20%);
 
-  &:hover {
-    background-color: darken($point, 10%);
-  }
+    &:hover {
+        background-color: darken($point, 10%);
+    }
 }
 
 [data-math-type="line"] {
-  background-color: $line;
-  border-color: darken($line, 20%);
+    background-color: $line;
+    border-color: darken($line, 20%);
 
-  &:hover {
-    background-color: darken($line, 10%);
-  }
+    &:hover {
+        background-color: darken($line, 10%);
+    }
 }
 
 [data-math-type="angle"] {
-  background-color: $angle;
-  border-color: darken($angle, 20%);
+    background-color: $angle;
+    border-color: darken($angle, 20%);
 
-  &:hover {
-    background-color: darken($angle, 10%);
-  }
+    &:hover {
+        background-color: darken($angle, 10%);
+    }
 }
 
 [data-math-type="quad"] {
-  background-color: $quad;
-  border-color: darken($quad, 20%);
+    background-color: $quad;
+    border-color: darken($quad, 20%);
 
-  &:hover {
-    background-color: darken($quad, 10%);
-  }
+    &:hover {
+        background-color: darken($quad, 10%);
+    }
 }
 
 [data-math-type="point"],
 [data-math-type="line"],
 [data-math-type="angle"],
 [data-math-type="quad"] {
-  padding: 2px;
-  border-radius: 4px;
+    padding: 2px;
+    border-radius: 4px;
 }
 
 [data-highlight-container] {
-  position: absolute;
-  z-index: 999;
+    position: absolute;
+    z-index: 999;
 }
 
 .highlight--point {
-  background-color: $line;
-  opacity: 0.6;
+    background-color: $line;
+    opacity: 0.6;
 }
 
 .footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+footer.footer,
+header.proof__header,
+main.proof__body > * {
+    margin-right: 320px;
+}
+body main.proof__body > figure.proof__figure {
+    margin-right: 10px;
 }
